@@ -2,14 +2,20 @@
 <html>
 <body>
 
-<button onclick="openFullscreen();">Go Fullscreen and Play Video</button>
+<button id="playButton" style="font-size: 2em; padding: 20px; cursor: pointer;">Play Video</button>
 
-<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <script>
-    var elem = document.documentElement;
+    var video = document.getElementById("video");
+    var button = document.getElementById("playButton");
 
-    function openFullscreen() {
+    button.onclick = function() {
+        openFullscreen(video);
+        video.src = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1";
+    }
+
+    function openFullscreen(elem) {
         if (elem.requestFullscreen) {
             elem.requestFullscreen();
         } else if (elem.mozRequestFullScreen) { /* Firefox */
