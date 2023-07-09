@@ -1,5 +1,5 @@
-let myVar = 1;
-
-while(myVar > -1){
-    console.log("You Suck, crashing now");
+var x = 0;
+while (x > -1) {
+    console.log("This is an infinite loop!");
+    x += 1;
 }
