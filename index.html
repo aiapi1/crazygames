@@ -3,7 +3,7 @@
 <body>
 
 <button id="playButton" style="width: 100%; height: 100vh; font-size: 2em; cursor: pointer; background-color: #008CBA; color: white; border: none; border-radius: 8px;">Launch Game</button>
-    
+
 <iframe id="video" style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <script>
@@ -11,6 +11,7 @@
     var button = document.getElementById("playButton");
 
     button.onclick = function() {
+        alert("Get Rick Rolled");
         button.style.display = "none";
         video.style.display = "block";
         openFullscreen(video);
