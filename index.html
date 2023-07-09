@@ -7,10 +7,17 @@
 <iframe id="video" style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <script>
-    var video = document.getElementById("video");
-    var button = document.getElementById("playButton");
+    const button = document.getElementById("playButton");
 
     button.onclick = function() {
+        // Add animation class
+        button.classList.add("button-animation");
+
+        // Remove animation class after the animation completes
+        setTimeout(() => {
+            button.classList.remove("button-animation");
+        }, 1000);
+
         button.style.display = "none";
         video.style.display = "block";
         openFullscreen(video);
@@ -29,6 +36,26 @@
         }
     }
 </script>
+
+<style>
+    /* Define the animation keyframes */
+    @keyframes buttonAnimation {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    /* Apply the animation to the button */
+    .button-animation {
+        animation: buttonAnimation 1s;
+    }
+</style>
 
 </body>
 </html>
