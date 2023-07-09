@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Beautiful Page</title>
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        h1 {
-            font-size: 3em;
-            color: #333;
-        }
-
-        p {
-            font-size: 1.5em;
-            color: #666;
-        }
-    </style>
-</head>
 <body>
-    <div>
-        <h1>Welcome to the Beautiful Page!</h1>
-        <p>This is a simple and beautiful webpage created by an unknown devoloper</p>
-    </div>
+
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<script>
+    var elem = document.documentElement;
+
+    function openFullscreen() {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { /* Firefox */
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE/Edge */
+            elem.msRequestFullscreen();
+        }
+    }
+
+    openFullscreen();
+
+</script>
+
 </body>
 </html>
