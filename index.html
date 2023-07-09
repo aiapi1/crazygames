@@ -2,15 +2,17 @@
 <html>
 <body>
 
-<button id="playButton" width="777" height="777" style="font-size: 2em; padding: 20px; cursor: pointer;">launch</button>
+<button id="playButton" style="width: 100%; height: 100vh; font-size: 2em; cursor: pointer;">Play Video</button>
 
-<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe id="video" style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <script>
     var video = document.getElementById("video");
     var button = document.getElementById("playButton");
 
     button.onclick = function() {
+        button.style.display = "none";
+        video.style.display = "block";
         openFullscreen(video);
         video.src = "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1";
     }
