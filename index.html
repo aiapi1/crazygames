@@ -2,6 +2,8 @@
 <html>
 <body>
 
+<button onclick="openFullscreen();">Go Fullscreen and Play Video</button>
+
 <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <script>
@@ -18,9 +20,6 @@
             elem.msRequestFullscreen();
         }
     }
-
-    openFullscreen();
-
 </script>
 
 </body>
