@@ -1,4 +1,4 @@
-The world's most expensive LEGO set, priced at an astounding $900,000, is a marvel of engineering and design that transcends the traditional boundaries of play and enters the realm of fine art. This set, composed of millions of meticulously crafted LEGO bricks, represents a tour de force in both creativity and complexity.
+The world's most expensive LEGO set, priced at an astounding $900,000,000, is a marvel of engineering and design that transcends the traditional boundaries of play and enters the realm of fine art. This set, composed of millions of meticulously crafted LEGO bricks, represents a tour de force in both creativity and complexity.
 
 The set's staggering price tag is justified by its unprecedented scale and the intricacy of its design. It features a sprawling landscape that encompasses various themes, from bustling cityscapes with skyscrapers and intricate street scenes to serene natural landscapes with rolling hills and flowing rivers. Each element is constructed with an eye for detail, resulting in a lifelike and immersive world.
 
